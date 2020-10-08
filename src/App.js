@@ -14,7 +14,7 @@ class App extends Component {
       <img
         className="user-picture"
         src={userpicture}
-        alt="user-picture"
+        alt="userPicture"
         width="300px"
       ></img>
     ),
@@ -51,11 +51,11 @@ class App extends Component {
           rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></link>
         <label htmlFor="show-state">Show State</label>
         <br></br>
-        <button type="button" class="btn btn-primary" onClick={this.change}>
+        <button type="button" className="btn btn-primary" onClick={this.change}>
           Show
         </button>
         <br></br>
@@ -66,10 +66,13 @@ class App extends Component {
           <div className="about">
             <Navbar/>
             <h1>{this.state.fullName}</h1>
-            <div className="photo">{this.state.imgSrc}</div>
-            <p>Bio : {this.state.bio}</p>
-            <p>Profession : {this.state.profession}</p>
+            {this.state.imgSrc}
+            <div className="data">
+            <p className="info">Bio : {this.state.bio}</p>
+            <p className="info">Profession : {this.state.profession}</p>
+            </div>
             <Footer/>
+            
           </div>
         ) : null}
       

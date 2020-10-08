@@ -2,7 +2,6 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
       <div className="card" style={{width: "18rem"}}>
         <div className="card-body">
           <h5 className="card-title">Contact</h5>
@@ -12,7 +11,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-    </div>
+    
   );
 };
 export default Footer;
