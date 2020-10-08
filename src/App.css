@@ -1,0 +1,16 @@
+.App {
+  margin: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+body {
+  background-color: gainsboro;
+}
+.h1 {
+  font-weight: bold;
+  color: rgb(3, 3, 44);
+}
+footer{
+  text-align :center;
+  padding-top :30px;
+}
